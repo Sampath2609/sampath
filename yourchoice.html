@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<title>BMI Calculator</title>
+<style>
+body {
+    background-image: url("sam.jpg");
+	 background-repeat: no-repeat;
+		 background-size: 1360px 800px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: green;
+	color:white;
+}
+</style>
+
+</head>
+<body>
+<ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="#yourchoice">BMI Calc</a></li>
+  <li><a href="contact.html">Contact</a></li>
+ 
+</ul>
+
+ <h1>Body Mass Index Calculator</h1>
+    <p>Enter your height: <input type="text" id="height"/>
+        <select type="multiple" id="heightunits">
+            <option value="metres" selected="selected">metres</option>
+            <option value="inches">inches</option>
+        </select>
+    </p>
+    <p>Enter your weight: <input type="text" id="weight"/>
+        <select type="multiple" id="weightunits">
+            <option value="kg" selected="selected">kilograms</option>
+            <option value="lb">pounds</option>
+        </select>
+    </p>
+    <input type="submit" value="computeBMI" onclick="computeBMI();">
+    <h1>Your BMI is: <span id="output">?</span></h1>
+<footer>
+<h3>What's BMI?</h3>
+Body Mass Index Is a Good Gauge of Body Fat.<br> 
+The most basic definition of overweight and obesity is having too much body fat-so much so that it “presents a risk to health.”<br>
+A reliable way to determine whether a person has too much body fat is to calculate the ratio of their weight to their height squared.
+</footer>
+     
+</body>
+</html>
